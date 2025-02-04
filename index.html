@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="Logo.png">
+
   </head>
   <body style="background-color: burlywood">
     <header>
+      <img src="Logo.png" alt="" class="logo">
       <h1>Welcome to My Portfolio</h1>
-      <a href=""><button>About</button></a>
+      <a href="Academics.html" target="_blank"
+        ><button class="Acad">Academics</button></a
+      >
       <a href=""><button>Skills</button></a>
       <a href=""><button>Contacts</button></a>
     </header>
@@ -43,7 +49,7 @@
       </section>
       <section id="Project">
         <h1>My Projects</h1>
-        <table border="1">
+        <table>
           <tr>
             <th>Project</th>
             <th>Description</th>
@@ -56,25 +62,28 @@
           </tr>
         </table>
       </section>
+      <br>
+      <hr style="border: 1px solid black;">
       <section id="Contact">
-        <h1>Contact Me</h1>
-        <p>Please feel free to contact me by filling the form:</p>
-        <label for="Name">Name</label>
-        <input type="text" id="Name" required /> <br />
-        <label for="email">Email</label>
-        <input type="email" id="email" required /><br />
-        <b>Select your gender: </b>
-        <input type="radio" id="Male" />
-        <label for="Male">Male</label>
-        <input type="radio" id="Female" />
-        <label for="Female">Female</label><br />
-        <label for="Message">Enter your message: </label><br />
-        <textarea
-          id="Message"
-          name="Message"
-          placeholder="Enter your text here.."
-        ></textarea> <br>
-        <button type="Submit">Submit</button>
+        <h1 class="contact">Contact Me</h1>
+          <p>Please feel free to contact me by filling the form:</p>
+          <label for="Name">Name</label>
+          <input type="text" id="Name" required /> <br />
+          <label for="email">Email</label>
+          <input type="email" id="email" required /><br />
+          <b>Select your gender: </b>
+          <input type="radio" id="Male" />
+          <label for="Male">Male</label>
+          <input type="radio" id="Female" />
+          <label for="Female">Female</label><br />
+          <label for="Message">Enter your message: </label><br />
+          <textarea
+            id="Message"
+            name="Message"
+            placeholder="Enter your text here.."
+          ></textarea>
+          <br />
+          <button type="Submit">Submit</button>
       </section>
     </main>
 
